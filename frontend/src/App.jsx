@@ -2237,7 +2237,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Building2, LogOut, CheckSquare, FileText, Upload, MessageSquare, Plus, Eye, X, Send, Target, Download, Trash2, CheckCircle, XCircle, BarChart3, MessageCircle, Bell, Calendar, Clock } from 'lucide-react';
 
-const API_URL = 'http://localhost:5001/api';
+const API_URL = 'https://pmistproject1.onrender.com';
 
 const NAAC_METRICS = [
   { id: 'NAAC 1.6', title: 'Indian Knowledge System', area: 'Workshops/seminars on IKS' },
@@ -3057,7 +3057,7 @@ function ReportModal({report, onClose, onUpdate}) {
               <p className="text-sm text-gray-600 mb-2">Photos</p>
               <div className="grid grid-cols-3 gap-4">
                 {report.geotaggedPhotos.map((photo, i) => (
-                  <img key={i} src={'http://localhost:5001' + photo.photoUrl} className="w-full h-40 object-cover rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-110" alt="Event" />
+                  <img key={i} src={'https://pmistproject1.onrender.com' + photo.photoUrl} className="w-full h-40 object-cover rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-110" alt="Event" />
                 ))}
               </div>
             </div>
